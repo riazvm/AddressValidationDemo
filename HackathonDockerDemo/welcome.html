@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+        <script type="text/javascript">
+
+			function toggle_visibility(showDiv, hideDiv1) {
+
+				var curDiv = document.getElementById(showDiv);
+
+				if(showDiv=="addrServiceDiv"){
+
+				document.myForm.action="http://192.168.99.100:8100/address-verify";
+				}
+
+				if(showDiv=='freeformDiv'){
+					document.myForm.action="http://192.168.99.100:8100/address-verify";
+				}
+				curDiv.style.display = 'block';
+				document.getElementById(hideDiv1).style.display = 'none';
+
+			}
+
+			function OnSubmitForm()
+			{
+			   document.myForm.action="http://192.168.99.100:8100/address-verify/";
+			  return true;
+			}
+</script>
+    </head>
+    <body>
+      <form name ="myForm" class="form-signin" method="GET" action="http://192.168.99.100:8100/address-verify" >
+
+
+<div id="demo-input" align="center" style="font-size: large;">
+		<div class="grid-container">
+			<div class="grid-100 hgroup">
+				<h1 id="title">Demo</h1>
+
+				Select a service: <input type="radio" name="service"
+					id="addrService" value="Address" checked="checked"
+					onchange="toggle_visibility('addrServiceDiv','freeformDiv')">
+				<label>Address</label> <input type="radio" name="service"
+					id="freeFormService" value="freeForm"
+					onchange="toggle_visibility('freeformDiv','addrServiceDiv')">
+				<label>FreeForm</label> <br>
+				<br>
+
+
+<div>
+<div id="addrServiceDiv">
+					<input class="form-control" type="text"
+								name="street" placeholder="Street Address 1" style="height:40px; width: 300px"> <br><br>
+						<input class="form-control" type="text"
+								name="street2" placeholder="Street Address 2" style="height:40px; width: 300px"> <br><br>
+						<input class="form-control" type="text"
+								name="city" placeholder="City" style="height:40px; width: 300px"> <br><br>
+						<input class="form-control" type="text"
+								name="state" placeholder="State" style="height:40px; width: 300px"> <br><br>
+						<input class="form-control" type="text"
+								name="zipcode" placeholder="Zip Code" style="height:40px; width: 300px">
+
+					<br>
+					<br>
+
+				</div>
+
+<div id="freeformDiv" style="display: none">
+					<table>
+						<tr>
+
+							<td><input class="form-control" type="text"
+								name="street" placeholder="Address" style="height:40px; width: 300px"></td>
+								
+						</tr>
+					</table>
+					<br>
+					<br>
+				</div>
+
+</div>
+
+
+
+
+  <button type="submit">Submit</button>
+  </div></div></div>
+				</form>
+				    </body>
+</html>
