@@ -1,4 +1,4 @@
-# AddressValidationDemo
+# AddressValidationMicroservice
 Authiors and Developers: Anand Bose And Riaz Mohamed 
 
 THe Address Validation Demo exposes a Address validation microservice that exposes a RESTAPI which takes a free form 
