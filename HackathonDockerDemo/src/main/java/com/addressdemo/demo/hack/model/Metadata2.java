@@ -1,6 +1,6 @@
-package com.infosys.demo.experian;
+package com.addressdemo.demo.hack.model;
 
-public class Metadata {
+public class Metadata2 {
 
 	private String record_type	;
 	private String zip_type;

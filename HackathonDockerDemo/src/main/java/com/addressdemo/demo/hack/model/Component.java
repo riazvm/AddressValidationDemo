@@ -1,4 +1,4 @@
-package com.infosys.demo.experian;
+package com.addressdemo.demo.hack.model;
 
 public class Component {
 

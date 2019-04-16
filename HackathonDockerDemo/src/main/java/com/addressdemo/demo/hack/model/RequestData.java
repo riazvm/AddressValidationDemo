@@ -1,4 +1,4 @@
-package com.infosys.demo.experian;
+package com.addressdemo.demo.hack.model;
 
 public class RequestData {
  private String input_id;

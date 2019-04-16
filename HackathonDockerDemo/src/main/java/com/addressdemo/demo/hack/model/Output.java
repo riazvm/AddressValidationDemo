@@ -1,4 +1,5 @@
-package com.infosys.demo.experian;
+package com.addressdemo.demo.hack.model;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
